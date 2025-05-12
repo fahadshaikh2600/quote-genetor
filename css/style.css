@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+}
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0c244a;
+}
+#right {
+  padding-left: 130px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#left {
+  padding-right: 130px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#Quote-btn {
+  background-color: #f3bd00;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 8px;
+}
+#headings {
+  text-align: center;
+  font-size: 33px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+}
+#display-section {
+  margin-left: 120px;
+  margin-right: 130px;
+  margin-top: 40px;
+}
+#display-container {
+  border-radius: 40px;
+  height: 358px;
+  padding: 30px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#display-input {
+  background-color: #f5f5f5;
+  height: 98%;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#output {
+  font-size: 45px;
+}
+
+#display-input > h4 {
+  position: absolute;
+  right: 120px;
+  bottom: 90px;
+  font-size: 22px;
+}
+#generate-btn {
+  background-color: #f3bd00;
+  width: 100%;
+  font-size: 20px;
+  height: 50px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+#form-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 130px 30px 120px;
+}
+.label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+#input-new-quotes {
+  height: 50px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #2e2e2e;
+  margin-bottom: 20px;
+}
+#add-quote-conatiner {
+  width: 100%;
+}
+#name {
+  width: 55%;
+  height: 50px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #2e2e2e;
+  font-size: 15px;
+}
+#add-quote-btn {
+  background-color: #f3bd00;
+  width: 41%;
+  font-size: 20px;
+  height: 45px;
+
+  border-radius: 8px;
+  margin-left: 40px;
+}
