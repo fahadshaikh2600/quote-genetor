@@ -43,25 +43,31 @@ if (!localStorage.getItem("qoutes")) {
   ];
   localStorage.setItem("qoutes", JSON.stringify(qoutes));
 }
+
 let storedQuotes = JSON.parse(localStorage.getItem("qoutes")) || [];
-function getQuoteRandom() {
-  const randomIndex = Math.floor(Math.random() * storedQuotes.length);
-  const randomQuotes = storedQuotes[randomIndex];
+genarateQuoteRandom();
+function genarateQuoteRandom() {
+  let randomIndex = Math.floor(Math.random() * storedQuotes.length);
+  let randomQuotes = storedQuotes[randomIndex];
+    console.log("hmm");
+
 
   document.querySelector("#output").textContent = "-" + randomQuotes.text;
   document.querySelector("#author").textContent = "-" + randomQuotes.author;
 }
 
 function addQuote() {
-  const addQuotes = document.getElementById("input-new-quotes").value;
-  const addAuthor = document.getElementById("name").value;
+  let addQuotes = document.getElementById("input-new-quotes").value;
+  let addAuthor = document.getElementById("name").value;
   if (addQuotes && addAuthor) {
     storedQuotes.push({ text: addQuotes, author: addAuthor });
     localStorage.setItem("qoutes", JSON.stringify(storedQuotes));
     console.log("mm");
     alert("Quote added successfully!");
-    document.getElementById("input-new-quotes") = "";
-    document.getElementById("name") = "";
+    document.getElementById("#input-new-quotes") = "";
+    document.getElementById("#name") = "";
+        console.log("m1m");
+
   } else {
     alert("please enter both the feilds");
   }

@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section id="header">
-      <nav id="nav-container">
-        <div id="right"><img src="./assets/tp-logo.png" alt="tp-logo" /></div>
-        <div id="left"><button id="Quote-btn">All Quotes</button></div>
-      </nav>
-    </section>
-    <h1 id="headings">Let’s Start Generating Quotes</h1>
-    <section id="display-section">
-      <div id="display-container">
-        <div id="display-input">
-          <h1 id="output">“Stay hungry, stay foolish.”</h1>
 
-          <h4 id="author">- Steve Jobs</h4>
-        </div>
-      </div>
-      <button id="generate-btn" onclick="getQuoteRandom()">
-        Generate Quote
-      </button>
-    </section>
-    <section id="form-section">
-      <label class="label" for="">New Quote</label>
-      <input type="text" placeholder="New Quote" id="input-new-quotes" />
-      <label class="label" for="">Name</label>
-      <div id="add-quote-conatiner">
-        <input type="text" placeholder="Name" id="name" />
-        <button id="add-quote-btn" onclick="addQuote()">Add Quote</button>
-      </div>
-    </section>
+<head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
 
-    <script src="./javasricpt/script.js"></script>
-  </body>
+<body>
+  <section id="header">
+    <nav id="nav-container">
+      <div id="right"><img src="./assets/tp-logo.png" alt="tp-logo" /></div>
+      <div id="left"><button id="Quote-btn">All Quotes</button></div>
+    </nav>
+  </section>
+  <h1 id="headings">Let’s Start Generating Quotes</h1>
+  <section id="display-section">
+    <div id="display-container">
+      <div id="display-input">
+        <h1 id="output"></h1>
+
+        <h4 id="author"></h4>
+      </div>
+    </div>
+    <button id="generate-btn" onclick="genarateQuoteRandom()">
+      Generate Quote
+    </button>
+  </section>
+  <section id="form-section">
+    <label class="label" for="">New Quote</label>
+    <input type="text" placeholder="New Quote" id="input-new-quotes" />
+    <label class="label" for="">Name</label>
+    <div id="add-quote-conatiner">
+      <input type="text" placeholder="Name" id="name" />
+      <button id="add-quote-btn" onclick="addQuote()">Add Quote</button>
+    </div>
+  </section>
+
+  <script src="./javasricpt/script.js"></script>
+</body>
+
 </html>
